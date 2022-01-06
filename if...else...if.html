@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành if...else...if</title>
+</head>
+<body>
+<input type="text" id="username" placeholder="Enter your username">
+<input type="password" id="password" placeholder="Enter your password">
+<button onclick="login()">Login</button>
+<script>
+    function login(){
+        // Khai báo biến username và password và lấy giá trị từ thẻ <input>
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+        //kiểm tra đăng nhập
+        if (username == "Admin") {
+            if (password == "TheMaster") {
+                alert("Wellcome back!");
+            } else if (password == null) {
+                alert("Canceled");
+            } else {
+                alert("Wrong password")
+            }
+        } else if (username == null) {
+            alert("Canceled");
+        } else {
+            alert("Who are you?");
+        }
+    }
+</script>
+</body>
+</html>
