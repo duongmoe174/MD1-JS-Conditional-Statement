@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 toán tử 3 ngôi</title>
+</head>
+<body>
+<input type="text" id="message">
+<button onclick="check()">Enter</button>
+<p id="result"></p>
+<script>
+    function check() {
+        let mess = document.getElementById("message").value;
+        let result = (mess=="Employee") ? "hello" : (mess=="Director") ?  "Greetings" : (mess=="") ? "no!": "";
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</body>
+</html>
